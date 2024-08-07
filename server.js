@@ -11,10 +11,7 @@ app.listen(PORT, (err) => {
   }
 });
 
-app.get('/', (req, res, next) => {
-  try {
-    res.send("Welcome to the server!");
-  } catch (err) {
-    console.log(`Something went wrong: ${err}`);
-  }
-});
+app.use(express.static("public"));
+
+
+
