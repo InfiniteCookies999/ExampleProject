@@ -1,2 +1,2 @@
-//This is my changed code
+// My own comment
 console.log("Hello World!");
